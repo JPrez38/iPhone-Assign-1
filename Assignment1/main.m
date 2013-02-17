@@ -7,14 +7,25 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "SiteValue.h"
 
 int main(int argc, const char * argv[])
 {
 
     @autoreleasepool {
+        SiteValue *hello = [[SiteValue alloc] init];
+        NSMutableDictionary *login = [NSMutableDictionary dictionary];
         
-        // insert code here...
-        NSLog(@"Hello, World!");
+        [login setObject:hello forKey:@"test"];
+        
+        [[login objectForKey:@"test"] printSiteValue ];
+        
+        [hello incrementCount];
+        [hello printSiteValue];
+        
+        
+        
+        
         
     }
     return 0;

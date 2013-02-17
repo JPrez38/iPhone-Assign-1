@@ -11,15 +11,15 @@
 @implementation SiteValue
 
 - (void) printSiteValue {
-    NSLog(@"Hello World");
+    NSLog(@"Hello World, the count is %d", _count);
 }
 
 - (void) setCount {
-    count=0;
+    _count=0;
 }
 
 - (void) incrementCount {
-    count++;
+    _count++;
 }
 
 

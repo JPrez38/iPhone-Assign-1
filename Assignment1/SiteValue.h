@@ -8,10 +8,12 @@
 
 #import <Foundation/Foundation.h>
 
+
 @interface SiteValue : NSObject
 
 @property id username, password;
-int count;
+@property int count;
+
 
 - (void) printSiteValue;
 - (void) setCount;
