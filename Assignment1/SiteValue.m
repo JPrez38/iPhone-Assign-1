@@ -37,4 +37,10 @@
     
 }
 
++(SiteValue*) siteValueWithUsername: (NSString*) username
+                        andPassword: (NSString*) password {
+    SiteValue *temp = [[SiteValue alloc] initWithUsername:username andPassword:password];
+    return temp;
+}
+
 @end

@@ -13,12 +13,14 @@ int main(int argc, const char * argv[])
 {
 
     @autoreleasepool {
-        SiteValue *hello = [[SiteValue alloc] initWithUsername:@"JPREZ" andPassword:@"helloworld"];
-        SiteValue *gmail = [[SiteValue alloc] initWithUsername:@"jacobo" andPassword:@"preston"];
-        SiteValue *twitter = [[SiteValue alloc] initWithUsername:@"jac" andPassword:@"pdsfsd"];
+        SiteValue *china = [SiteValue siteValueWithUsername:@"Hello" andPassword:@"ddfsd"];
+        SiteValue *hello = [SiteValue siteValueWithUsername:@"JPREZ" andPassword:@"helloworld"];
+        SiteValue *gmail = [SiteValue siteValueWithUsername:@"jacobo" andPassword:@"preston"];
+        SiteValue *twitter = [SiteValue siteValueWithUsername:@"jac" andPassword:@"pdsfsd"];
         
         NSMutableDictionary *login = [NSMutableDictionary dictionary];
         
+        [login setObject:china forKey:@"China"];
         [login setObject:hello forKey:@"facebook"];
         [login setObject:gmail forKey:@"gmail"];
         [login setObject:twitter forKey:@"twitter"];

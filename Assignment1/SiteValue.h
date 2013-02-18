@@ -22,6 +22,9 @@
 - (SiteValue*) initWithUsername: (NSString*) username
    andPassword: (NSString*) password;
 
++(SiteValue*) siteValueWithUsername: (NSString*) username
+                        andPassword: (NSString*) password;
+
 
 
 @end
