@@ -13,12 +13,12 @@ int main(int argc, const char * argv[])
 {
 
     @autoreleasepool {
-        SiteValue *hello = [[SiteValue alloc] init];
+        SiteValue *hello = [[SiteValue alloc] initWithUsername:@"JPREZ" andPassword:@"helloworld"];
         NSMutableDictionary *login = [NSMutableDictionary dictionary];
         
         [login setObject:hello forKey:@"test"];
         
-        [[login objectForKey:@"test"] printSiteValue ];
+        [[login objectForKey:@"test"] printSiteValue];
         
         [hello incrementCount];
         [hello printSiteValue];

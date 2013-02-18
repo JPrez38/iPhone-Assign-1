@@ -11,7 +11,7 @@
 @implementation SiteValue
 
 - (void) printSiteValue {
-    NSLog(@"Hello World, the count is %d", _count);
+    NSLog(@"The Username is %@, the password is %@, times logged in is %d",_username,_password, _count);
 }
 
 - (void) setCount {
@@ -22,6 +22,25 @@
     _count++;
 }
 
++ (SiteValue*) siteValueWithUsername: (NSString*) username
+                         andPassword: (NSString*) password andCount: (int) count {
+    NSLog(@"confusion");
+    
+}
 
+
+- (SiteValue*) initWithUsername: (NSString*) username
+                    andPassword: (NSString*) password {
+    self = [super init];
+    
+    if (self) {
+        _username = username;
+        _password = password;
+        [self setCount];
+    }
+    
+    return self;
+    
+}
 
 @end
