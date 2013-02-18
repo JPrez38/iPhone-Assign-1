@@ -22,12 +22,6 @@
     _count++;
 }
 
-+ (SiteValue*) siteValueWithUsername: (NSString*) username
-                         andPassword: (NSString*) password andCount: (int) count {
-    NSLog(@"confusion");
-    
-}
-
 
 - (SiteValue*) initWithUsername: (NSString*) username
                     andPassword: (NSString*) password {

@@ -19,8 +19,6 @@
 - (void) setCount;
 - (void) incrementCount;
 
-+ (SiteValue*) siteValueWithUsername: (NSString*) username
-                            andPassword: (NSString*) password;
 - (SiteValue*) initWithUsername: (NSString*) username
    andPassword: (NSString*) password;
 
